@@ -86,26 +86,17 @@ export default function Home() {
             <br></br>
             <p>Common Tailwind Building blocks include: </p>
             <pre className="bg-gray-100 p-4 rounded mt-2"><code>p-4 // padding<br></br>px-6 // horizontal padding
-            <br></br>py-2 // vertical padding <br></br>mt-4 // margin top <br></br>mb-8 // margin-bottom</code></pre>
+            <br></br>py-2 // vertical padding <br></br>mt-4 // margin top <br></br>mb-8 // margin-bottom<br></br>bg-colorofprefererence-100 // background color
+            <br></br>text-colorofpreference // text color<br></br>flex // enables flex<br></br>flex items-center // vertical center<br></br>justify-center // horizontal center
+            <br></br>grid grid-cols-3 gap-4 // making a grid layout<br></br>text-sm text-lg text-xl text-5xl // font sizes
+            <br></br>font-bold font-extrabold // make your text bold <br></br>text-left text-center text-justify // text alignment</code></pre>
+            <br></br>
+            <p className="text-base md:text-lg lg:text-xl">This text changes size based on screen width.</p><br></br>
+            <button className="bg-blue-400 hover:bg-blue-900 text-white px-4 py-2 rounded">This button changes color when hovered</button>
           </div>
         </section>
 
-        {/* Typography Section */}
-        <section id="text" className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Typography</h2>
-          <div className="bg-white rounded-lg shadow-md p-8 space-y-4">
-            <h1 className="text-5xl font-bold text-gray-900">Heading 1 - Extra Large</h1>
-            <h2 className="text-4xl font-bold text-gray-900">Heading 2 - Large</h2>
-            <h3 className="text-3xl font-bold text-gray-900">Heading 3 - Medium</h3>
-            <p className="text-xl text-gray-700">This is a large paragraph with text-xl class.</p>
-            <p className="text-base text-gray-600">This is a regular paragraph with text-base class.</p>
-            <p className="text-sm text-gray-500">This is small text with text-sm class.</p>
-            <p className="font-bold text-gray-900">This is bold text.</p>
-            <p className="italic text-gray-700">This is italic text.</p>
-            <p className="underline text-blue-600">This is underlined text.</p>
-          </div>
-        </section>
-
+        
         {/* Layouts Section */}
         <section id="layouts" className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Layout Examples</h2>
@@ -137,39 +128,6 @@ export default function Home() {
               <div className="bg-orange-500 text-white p-4 rounded-lg flex-shrink-0">Item 2</div>
               <div className="bg-yellow-500 text-white p-4 rounded-lg flex-shrink-0">Item 3</div>
               <div className="bg-teal-500 text-white p-4 rounded-lg flex-shrink-0">Item 4</div>
-            </div>
-          </div>
-        </section>
-
-        {/* Image Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Images</h2>
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div>
-                <img 
-                  src="https://via.placeholder.com/400x300/3B82F6/FFFFFF?text=Image+1" 
-                  alt="Placeholder" 
-                  className="w-full rounded-lg shadow-md"
-                />
-                <p className="mt-2 text-center font-medium">Rounded Image</p>
-              </div>
-              <div>
-                <img 
-                  src="https://via.placeholder.com/400x300/10B981/FFFFFF?text=Image+2" 
-                  alt="Placeholder" 
-                  className="w-full rounded-full shadow-md"
-                />
-                <p className="mt-2 text-center font-medium">Circular Image</p>
-              </div>
-              <div>
-                <img 
-                  src="https://via.placeholder.com/400x300/8B5CF6/FFFFFF?text=Image+3" 
-                  alt="Placeholder" 
-                  className="w-full shadow-2xl"
-                />
-                <p className="mt-2 text-center font-medium">Shadow Image</p>
-              </div>
             </div>
           </div>
         </section>
